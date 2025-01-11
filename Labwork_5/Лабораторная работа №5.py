@@ -39,15 +39,4 @@ obj_two.set_radius(35)
 print(f"Новый радиус круга - {obj_two.radius}")
 print()
 
-class Person:
-
-     def __init__(self, dam):
-         self.health = 100
-         self.dam = dam
-
-
-     def get_damage(self, health, dama):
-         self.health = health - dama
-         print(f"Стало - {self.health}")
-
 
