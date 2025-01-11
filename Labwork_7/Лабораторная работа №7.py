@@ -1,5 +1,5 @@
 class Employee:
-    def __init__(self, name, employee_id):
+    def __init__(self, name, employee_id, **kwargs):
         self.name = name
         self.employee_id = employee_id
 
@@ -7,8 +7,8 @@ class Employee:
         return f'Имя сотрудника: {self.name}\nID сотрудника: {self.employee_id}'
 
 class Manager(Employee):
-    def __init__(self,name, employee_id, department):
-        Employee.__init__(self, name, employee_id)
+    def __init__(self,name, employee_id, department=None, **kwargs):
+        super().__init__(name, employee_id, department=department, **kwargs)
         self.department = department
 
     def manage_project(self):
@@ -18,8 +18,8 @@ class Manager(Employee):
         #return f'{super().get_info()}'
 
 class Technician(Employee):
-    def __init__(self, name, employee_id, specialization):
-        Employee.__init__(self, name, employee_id)
+    def __init__(self, name, employee_id, specialization=None, **kwargs):
+        super().__init__(name, employee_id, specialization=specialization, **kwargs)
         self.specialization = specialization
 
     def perform_maintenance(self):
@@ -29,9 +29,8 @@ class Technician(Employee):
         #return f'{super().get_info()}'
 
 class TechManager(Manager, Technician):
-    def __init__(self, name, employee_id, department, specialization):
-        Manager.__init__(self, name, employee_id, department)
-        Technician.__init__(self, name, employee_id, specialization)
+    def __init__(self, name, employee_id, department=None, specialization=None):
+      super().__init__(employee_id, name, department=department, specialization=specialization)
         self.team = []
 
     def project(self):
