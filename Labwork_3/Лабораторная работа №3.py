@@ -1,7 +1,7 @@
 # Задача 1
 def read_file(name, type):
     try:
-        if type == 'fool':
+        if type == 'full':
             with open(f'{name}', 'r') as file:
                 print(file.read())
 
