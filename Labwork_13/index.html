@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Сайт-визитка (портфолио)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface:wght@400;&family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Алексеева Татьяна</h1>
+            
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about"><i class="material-icons">person</i>Всё, что Вы хотели знать, но боялись спросить</a></li>
+                    <li><a href="#projects"><i class="material-icons">dashboard</i>Проекты</a></li>
+                    <li><a href="#skills"><i class="material-icons">check_circle</i>Что могу и как могу?</a></li>
+                    <li><a href="#contacts"><i class="material-icons">email</i>Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section id="about" class="section">
+                <h2>Немного обо мне</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Добрового времени суток! Меня зовут Татьяна.</p>
+                        <p>Я студентка МТУСИ (Московского Технического Университета Связи и Информатики).</p>
+                        <p>Занималась изучением Python, SQL. На данный момент осваиваю HTML и CSS.</p>
+                        <p>Так же я прохожу курс по введению в Машинное обучение.</p>
+                        <p>В свободное время люблю читать книги и мангу (фантастика, романтика, детектив и психология), собирать алмазные мозаики и рисовать картины по номерам.</p>
+                    </div>
+                    <div class="about-image">
+                        <img
+                        src="assets/avatarka.png"
+                        alt="Татьяна"
+                        class="avatar"
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <h2>Мои проекты</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Змейка и морской бой на консоли</h3>
+                        <p>Первый большой код на языке Python (вводный курс)</p>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Рейтинг фильмов</h3>
+                        <p>Создание статистики рейтинга фильмов с Кинопоиска по некоторым параметрам (курс по DataScience)</p>
+                    </div>
+
+                     <div class="project-card">
+                        <h3>Светофор</h3>
+                        <p>Сборка конечного автомата (светофора) по Кибернетике</p>
+                    </div>    
+
+                     <div class="project-card">
+                        <h3>Сборка процессора</h3>
+                        <p>Сборка процессора модели Фон-Неймана и Гарвардской модели</p>
+                    </div>    
+                </div>
+            </section>
+
+            <section id="skills" class="section">
+                <h2>Немного о моих навыках</h2>
+                <div class="skills-container">
+                    <div class="skills-column">
+                        <h3><i class="material-icons">engineering</i>Hard skills</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>Самую малость HTML и CSS</li>
+                            <li>Немного DataScience</li>
+                            <li>Основы Octave</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skills-column">
+                        <h3><i class="material-icons">psychology</i>Soft skills</h3>
+                        <ul>
+                            <li>Коммуникабельность</li>
+                            <li>Эмпатичность</li>
+                            <li>Стрессоустойчивость</li>
+                            <li>Хорошая работа в команде</li>
+                            <li>Внимательность</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id="contacts" class="footer">
+        <div class="container">
+            <h2>Как со мной связаться?</h2>
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p><i class="material-icons">mail</i>ta.alekseeva05@gmail.com</p>
+                    <p><i class="material-icons">mail</i>alex.7atyana@yandex.ru</p>
+                    <p><i class="material-icons">call</i>+7(900)965-92-62</p>
+                    <p><i class="material-icons">call</i>+7(993)237-16-04</p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://web.telegram.org/a/"><i class="material-icons">send</i></a>
+                    <a href="https://vk.com/id321111616"><i class="material-icons">format_bold</i></a>
+                    <a href="https://github.com/T0tyana"><i class="material-icons">pets</i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

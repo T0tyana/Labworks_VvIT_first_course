@@ -1,0 +1,209 @@
+:root {
+    --primary-purple: #a258c7;       
+    --dark-purple: #a070c7;          
+    --light-purple: #f7f5f8;         
+    --silver: #bdbdbd;              
+    --purple: #b4b185;            
+    --khaki: #F0E68C;              
+    --dark-khaki: #ecdd54;
+    --light-purple-two: #cf87e7; 
+    --dark-purple-two: #3b0252;              
+}   
+
+body {
+    font-family: 'Abril Fatface', sans-serif; 
+    line-height: 1.6;                      
+    color: var(--dark-purple-two);                   
+    margin: 0;                             
+    padding: 0;                            
+    background-color: var(--light-purple);        
+}
+
+.container {
+    width: 90%;                           
+    max-width: 1200px;                    
+    margin: 0 auto;                       
+    padding: 20px 0;                      
+}
+
+.header {
+    background-color: var(--primary-purple); 
+    color: var(--khaki);                  
+    padding: 30px 0;                     
+    text-align: left;                 
+}
+
+.header h1 {
+    font-family: 'Arvo', sans-serif; 
+    margin: 0;                           
+    font-size: 2.5rem;                  
+}
+
+
+.nav ul {
+    list-style: none;                   
+    padding: 0;                         
+    display: flex;                   
+    justify-content: left;            
+    flex-wrap: wrap;                    
+    gap: 20px;                        
+    margin-top: 20px;                 
+}
+
+.nav a {
+    color: var(--khaki);            
+    text-decoration: none;           
+    font-weight: 600;              
+    padding: 8px 16px;             
+    border-radius: 4px;           
+    transition: background-color 0.3s; 
+    display: flex;                
+    align-items: center;         
+    gap: 8px;                   
+}
+
+.nav a:hover {
+    background-color: var(--light-purple-two); 
+}
+
+.main {
+    padding: 40px 0;                   
+}
+
+.section {
+    margin-bottom: 50px;             
+}
+
+.section h2 {
+    font-family: 'Arvo', serif; 
+    color: var(--dark-purple);          
+    text-align: left;              
+    margin-bottom: 30px;            
+    position: relative;            
+}
+
+.section h2::after {
+    content: '';                   
+    display: block;               
+    width: 100px;               
+    height: 3px;               
+    background-color: var(--silver); 
+}
+
+.about-content {
+    display: flex;             
+    align-items: center;       
+    gap: 40px;               
+    flex-wrap: wrap;        
+}
+
+.about-text {
+    flex: 1;                
+    min-width: 300px;     
+}
+
+.about-image {
+    flex: 1;              
+    min-width: 300px;    
+    display: flex;      
+    justify-content: center; 
+}
+
+.avatar {
+    width: 200px;     
+    height: 200px;    
+    border-radius: 50%; 
+    border: 5px solid var(--silver); 
+    transition: transform 0.3s; 
+}
+
+.avatar:hover {
+    transform: scale(1.05); 
+}
+
+.projects-grid {
+    display: grid;                         
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;                           
+}
+
+.project-card {
+    background-color: var(--light-purple); 
+    padding: 20px;                      
+    border-radius: 8px;                
+    border: 1px solid var(--purple);  
+}
+
+.project-card h3 {
+    color: var(--dark-purple);       
+    margin-top: 0;                
+}
+
+
+.skills-container {
+    display: flex;              
+    gap: 30px;               
+    flex-wrap: wrap;         
+}
+
+.skills-column {
+    flex: 1;                
+    min-width: 300px;      
+    background-color: var(--light-purple); 
+    padding: 20px;        
+    border-radius: 8px;  
+}
+
+.skills-column h3 {
+    color: var(--dark-purple); 
+    display: flex;         
+    align-items: center;  
+    gap: 10px;         
+}
+
+.skills-column ul {
+    list-style: none;   
+    padding: 0;       
+}
+
+.skills-column li {
+    padding: 8px 0;  
+    border-bottom: 1px solid var(--purple); 
+}
+
+.footer {
+    background-color: var(--dark-purple); 
+    color: var(--khaki);               
+    padding: 40px 0;                  
+    text-align: left;              
+}
+
+.footer h2 {
+    color: var(--khaki);           
+}
+
+.footer-content {
+    display: flex;               
+    justify-content: space-between; 
+    flex-wrap: wrap;            
+    gap: 20px;               
+    max-width: 600px;       
+}
+
+.contact-info {
+    text-align: left;     
+}
+
+.social-links {
+    display: flex;      
+    gap: 15px;        
+}
+
+.social-links a {
+    color: var(--khaki);
+    font-size: 50px;   
+}
+
+.social-links a:hover {
+    color: var(--dark-khaki); 
+}
